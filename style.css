@@ -1,0 +1,241 @@
+*{
+    box-sizing: border-box;
+    color: #ffff;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    width: 100%;
+    min-width: 340px;
+}
+.navigationwrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #157293;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem;
+    background: #157293;
+    max-height: 5rem;
+    width: 100vh;
+    align-items: center;
+}
+.navbarlink{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    max-height: 5rem;
+}
+.navbarlink a{
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1rem; 
+}
+.link {
+    text-decoration: none;
+}
+.hide {
+    display: none;
+    width: 94%;
+    top: 3rem;
+    padding-top: 0;
+    width: fit-content;
+    background-color: #157293;
+    margin: 40px;
+
+}
+nav h1{
+    margin: 1rem;
+    color: white;
+    font-size: 3rem
+}
+.hamburger {
+    cursor: pointer;
+    margin: 1rem 2rem;
+}
+.hamburger .line {
+    display: block; 
+    width: 3rem;
+    height: .3rem;
+    margin: 1rem; 
+    background-color: white;
+}
+.firstsectionwrapper{
+    margin: 3rem;
+    width: fit-content;
+
+}
+.firstsectionwrapper h1 {
+    color: rgb(57, 118, 139);
+    font-size: 5rem;
+}
+.firstsectionwrapper p {
+    padding: 1rem 2rem;
+    width: 100%;
+    font-size: 3rem;
+    justify-content: space-between;
+    color: rgb(59, 55, 55);
+}
+.firstsectionwrapper img {
+    padding: 3rem;
+    width: 100%;
+    justify-content: center;
+}
+.SecondSection{
+    display: block;
+    width: 100%;
+    background-color: rgba(59, 55, 55, 0.1);
+}
+.SecondSection div{
+    padding: 1rem 2rem;
+    width: 100%;
+}
+.SecondSection .DesignSection button {
+    display: block;
+}
+.SecondSection .DesignSection h2{
+    font-size: 3rem;
+    margin: 1rem 2rem;
+    color: #157293;
+}
+.SecondSection button{
+    border: none;
+    background-color: #157293;
+    color: white;
+    font-size: 2rem;
+    border-radius: .8rem;
+    width: 13rem;
+    height: 5rem;
+    margin: 3rem;
+
+}
+button:hover{
+    opacity: 0.8;
+    background-color: #4797ab;
+    color: black;
+}
+.SecondSection div img{
+    width: 85%;
+    margin: 1rem 2rem;
+    border-radius: 7%;
+}
+.ThirdSectionWrapper{
+    background-color: #4797ab;
+    padding: 1rem 2rem;
+    padding-bottom: 4rem;
+    color: white;
+    font-size: 2.3rem;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-between;
+}
+.ThirdSectioncontainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+
+}
+.thirditem{
+    width: 40%;
+}
+.thirditem .contact{
+    width: 17rem;
+    height: 7rem;
+    border-radius: .8rem;
+    color: rgb(57, 118, 139);
+    font-size: 2rem;
+    border: none;
+    margin-right: 6rem
+}
+.thirditem .tel {
+    width: 17rem;
+    height: 7rem;
+    border-radius: .8rem;
+    color: white;
+    background-color: #157293;
+    font-size: 3rem;
+    border: none;
+    margin-left: 5rem;
+}
+.ThirdSectioncontainer a {
+    text-decoration: none;
+}
+
+footer {
+    padding: 40px;
+    align-items: center;
+    text-align: center;
+    background-color: #157293;
+    color: white;
+}
+.footerPrompt {
+    padding: 20px;
+}
+.footerPrompt h3 {
+    padding: 15px;
+    font-size: 2rem;
+}
+.footerlogo a img {
+    padding: .1rem;
+    margin-bottom: 5rem;
+    width: 3.8rem;
+    height: 3.8rem;
+}
+h2.email a {
+    text-decoration: none;
+    color: white;
+}
+p.email a {
+    text-decoration: none;
+    font-size: 2rem;
+}
+.copyright{
+    font-size: 1.5rem;
+}
+@media screen and (min-width :768px ) {
+    .hamburger{
+        display: none;
+    }
+    .firstsectionwrapper p {
+        font-size: 4rem;
+        font-weight: 400;
+    }
+    .firstsectionwrapper h1 {
+        font-size: 5rem;
+        font-weight: 700;
+    }
+    .firstsectionwrapper img {
+        width: 50vh;
+    }
+    .SecondSection {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 25px;
+        padding-top: 30px;
+    } 
+    .SecondSection div{
+        width: 45%;
+        border: 1px solid none;
+        border-radius: 7%;
+    }
+   .SecondSection button {
+        float: right;
+
+    }
+    .ThirdSectionWrapper  {
+        display: block;
+        background-repeat: no-repeat !important;
+    }
+    .navbarlink a{
+        font-size: 1.5rem;
+    }
+    .hide{
+        display: flex;
+    }
+}
+
